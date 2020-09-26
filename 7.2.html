@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" >
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       //Se deberá utilizar funciones (comunes, con retorno, arrow, en varialbes)
+
+    //1- Se deberá realizar un programa en la cual pide al usuario nombre, apellido y edad, luego deberá evaluar si el usuario es mayor de edad.
+    var nombre = 'Lean'
+    var edad = 28
+    var mayorEdad = (n,e) =>{
+        if(e>=18){
+            alert(n+' es mayor de edad!')
+        } else{
+            alert(n+' es menor de edad')
+        }
+    }
+    mayorEdad(nombre,edad)
+
+    //2- Realizar un programa el cual deberá simular el logueo de pagina, deberá pedir usuario y contraseña, mandar un mensaje en el caso que alguno de los dos sea incorrecto
+    var user1='navegando con Bartolo'
+    var pass1='Mibarcogrande'
+    var intento1='barcogrande'
+    var intento2='Mibarcogrande'
+
+    var loggin = (n,e) =>{
+        if(e==pass1){
+            alert('Loggin exitoso, bienvenido !')
+            alert('Bienvenido '+n)
+        } else {
+            alert('Loggin fallido, intente nuevamente!')
+            alert(n+' Hace memoria campeón !')
+        }
+    }
+    loggin(user1,intento1)  // quise probarlo y lo use dos veces! :D
+    loggin(user1,intento2)	
+
+    //3- Realizar un programa que permita ingresar un importe en dólares , el valor del tipo de cambio y luego que se muestre por pantalla el importe especificado en pesos.
+    var importeDolares= 1000
+    var tc=140
+    var importePesitos = (n3,e3) =>{
+        importePesitos = (n3*e3)
+        alert('En pesitos de monopoly valen: '+importePesitos)
+    }
+    importePesitos(importeDolares,tc)
+
+	//4- Escriba un programa que convierta una medida dada en pies y lo transforme en : a) Yardas , b) Pulgadas , c) Centímetros , d) Metros 
+    var pies = 10
+
+    var equivalencias = (n4) =>{
+        alert('Yarda: '+n4/3+'  '+
+            'Pies: '+n4*12+'  '+
+            'Centimetros: '+n4*30.48+'  '+
+            'Metros: '+n4/3.281+'  '
+        )
+    }
+
+    equivalencias(pies)
+
+	//5- Se desea conocer el estado del clima de una ciudad , para ellos se ingresa en un cuadro de texto la temperatura , si la misma es mayor a 25 se debe mostrar una etiqueta que diga “Cálido” , si la temperatura esta entre 25 y 10 , se deberá mostrar una etiqueta que diga “Templado” , si la temperatura es menor a 10 , informar “ Frio” con una etiqueta
+
+	var estadoClima = (n5) =>{
+  	  if(n5>=25){
+          alert('Cálido! ')
+   	  } else if(n5>=10){
+          alert('Templado')
+           } else{
+          alert('Frio')
+           }
+         }
+
+    //Pruebas
+    estadoClima(25)
+    estadoClima(4)
+    estadoClima(17)
+
+
+   //6- No hay actividad 6
+    //7- Realizar un programa que permita ingresar datos de edad  y sueldo de 10 empleados.
+    // Además de ingresar los datos el programa debe permitir al usuario consultar los datos y mostrarlos en pantalla
+    var empleados = ["Bariz", "Orlando", "Apu", "Marta"];
+    var edades = [28, 55, 34, 44];    
+    console.log(empleados,edades)
+
+    agregarEmpleado("Yo",55);
+    muestraNombres();
+    muestraEdades();
+
+    function agregarEmpleado(em,ed){
+    var em,ed;
+    empleados.push(em);  
+    edades.push(ed);  
+    console.log(empleados,edades)     
+    }
+
+    function muestraNombres(){
+        empleados.forEach(empleados => {
+            console.log(empleados)
+        });
+    }
+    function muestraEdades(){
+        edades.forEach(edades => {
+            console.log(edades)
+        });
+    }
+
+
+
+   </script> 
+</body>
+</html>

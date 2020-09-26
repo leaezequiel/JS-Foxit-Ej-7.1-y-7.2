@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//     1-Hacer una función que imprima tu apellido.
+var apellido= "Ezequiel";
+function imprimeApellido(){
+console.log(apellido);
+}
+imprimeApellido();
+// 2-Hacer una función que imprima tu comida favorita.
+var favFood= "Pizza Napo";
+function imprimeComida(){
+console.log(favFood);
+}
+imprimeComida();
+// 3-Hacer una función que imprima tu edad.
+var edad= 28;
+function imprimeEdad(){
+console.log(edad);
+}
+imprimeEdad();
+// 4-Hacer una función que muestre la suma de dos números.
+function sumador(){
+var num1=Number(prompt('Ingrese primer numero'))
+var num2=Number(prompt('Ingrese segundo numero'))
+var num3 = num1+num2;
+alert('La suma de ambos numeros es: '+num3)
+}
+sumador()
+// 5-Hacer una función que reciba un numero por parámetro e indique si es par o impar.
+var num4=Number(prompt('Ingrese numero a saber si es par o impar'))
+function parImpar(num5){
+    var parametro=num5;
+    if(parametro%2==1){
+        console.log('NUMERO IMPAR')
+    } else{
+        console.log('NUMERO PAR')
+    }
+}
+parImpar(num4);
+// 6-Hacer una función que reciba dos parámetros, nombre y edad y los muestre por pantalla.
+var edad= 28
+var nombre='Leandro'
+function muestraDato(nombreP, edadP){
+alert('Nombre: '+nombreP)
+alert('Edad: '+edadP)
+}
+muestraDato(nombre,edad)
+// 7-Hacer una función que reciba 3 números y muestre el promedio
+function promedio(){
+var num10=Number(prompt('Ingrese primer numero'))
+var num11=Number(prompt('Ingrese segundo numero'))
+var num12=Number(prompt('Ingrese tercer numero'))
+var num13=(num10+num11+num12)/3
+alert('Promedio: '+num13)
+}
+promedio()
+// 8-Hacer una programa que pida ingresar al usuario su edad e indique si es mayor o menor (se deberá utilizar funciones alert() y prompt().
+function esMayor() {
+var num14=Number(prompt('Ingrese numero y veremos si es mayor de edad'))
+    if(num14>=18){
+    alert('Es mayor edad, pasa al cheboli')
+    } else{
+   alert('Es menor de edad, volveté a tu casa')
+    }
+}
+esMayor()
+// 9-Hacer programa que pida al usuario ingresar dos palabras e indicar si son iguales.    
+function esIgual() {
+var string1=prompt('Ingrese primera palabra')
+var string2=prompt('Ingrese segunda palabra')
+    if(string1===string2){
+    alert('Identicos!')
+    } else{
+   alert('Diferentes!')
+    }
+}
+esIgual()        
+    </script>
+</body>
+</html>
